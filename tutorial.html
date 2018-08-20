@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MIKHMON -MikroTik Hotspot Monitor-</title>
+<meta name="description" content="Mikrotik Hotspot Monitor" />
+<meta name="keywords" content="mikhmon,mikrotik,voucher,routeros,api mikrotik,rtrwnet, rtrw/net,hotspot" />
+<meta name="Revisit-After" content="1 Days"/>
+<meta name="robots" content="index, follow"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/mikhmon-ui-light.css">
+<link rel="icon" href="img/favicon.png" />
+<script>
+if (window.location.href == './#support'){
+	window.location.href = './support.html';
+}else if (window.location.href == './#servernotrunning'){
+	window.location.href = './support.html#servernotrunning';
+}else if (window.location.href == './#template'){
+	window.location.href = './template.html';
+}
+</script>
+</head>
+<body style="background: url('./img/textures.png');">
+<div class="container">
+	<div class="row">
+		<div class="col-10 mr-a" style="float:none;">
+			<div class="card bg-light box-shadow radius-3">
+			<div class="row">
+				<div class="col-12">
+					<div class="radius-t-3 text-center bg-dark"><b style="font-size: 50px; text-shadow: 1px 1px 4px #424242;" class="text-light">MIKHMON</b></div>
+				</div>
+				<div class="col-12" style="font-size:14px;">
+					<div class="topnav" id="TopNav">
+  						<a href="./"><i class="fa fa-home"></i></a>
+  						<a href="./fitur.html">Fitur</a>
+  						<div class="dropdown">
+    						<button class="dropbtn">Download
+      							<i class="fa fa-caret-down"></i>
+    						</button>
+    						<div class="dropdown-content">
+      							<a href="./download.html">MIKHMON</a>
+      							<a href="./template.html">Template Login Page</a>
+      							<a href="./voucher.html">Template Voucher</a>
+    						</div>
+  						</div> 
+  						<a href="./tutorial.html" class="active">Tutorial</a>
+  						<a href="./support.html">Dukungan</a>
+  						<a href="./about.html">About</a>
+  						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="TopNav()">&#9776;</a>
+					</div>
+				</div>
+			<div class="col-6">
+				<div class="row">	
+				<div class="col-12">
+					<div class="card">
+						<div class="card-header">
+							<h3><i class="fa fa-book"></i> Konfigurasi di MikroTik</h3>
+						</div>
+						<div class="card-body">
+				  				<ol>
+				    				<li>Pastikan port API MikroTik sudah aktif [ip->services].<br>
+										<a href="./img/api.png" target="_blank" title="MikroTik API"><img src="./img/api.png" class="img2"></a>
+				    				</li>
+			    					<li>Setting jam dan tanggal dengan menambahkan NTP Serer [system->sntp client].<br>
+										<a href="./img/sntp.PNG" target="_blank" title="MikroTik SNTP"><img src="./img/sntp.PNG" class="img2"></a></li>
+				    				<li>Sesuaikan zona waktu masing-masing [system->clock].<br>
+										<a href="./img/clock.PNG" target="_blank" title="MikroTik Clock"><img src="./img/clock.PNG" class="img2"></a></li>
+				  				</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="col-6">
+				<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<div class="card-header">
+							<h3><i class="fa fa-book"></i> Mikhmon + Webserver</h3>
+						</div>
+						<div class="card-body">
+							<h3>Tutorial Singkat Mikhmon + Webserver</h3>
+				  				<ol>
+				    				<li>Download dan extract [mikhmonv3ws.zip].</li>
+				    				<li>Jalankan [MikhmonServer] / Run as administrator.</li>
+			    					<li>Buka http://127.0.0.1/mikhmonv2 di browser (disarankan menggunakan Google Chrome).</li>
+			    					<li>Login menggunakan user password default [user:mikhmon pass:1234].</li>
+			    					<li>Klik Add Router</li>
+			    					<li>Isikan IP, user dan password MikroTik, kemudian save dan klik Connect untuk tes koneksi ke MikroTik.  <br>[IP bisa menggunakan ip yang di ether1, cek dari Winbox : ip->address->ether1].</li>
+				    				<li>Buat User Profile baru, atau update User Profile lama dengan memilih Expired Mode. Sesuikan dengan kebutuhan.</li>
+				    				<li>User Profile sudah siap, selanjutnya sudah bisa add user atau generate user dan cetak voucher.</li>
+				  				</ol>
+						</div>
+					</div>
+				</div>	
+				<div class="col-12">	
+					<div class="card">
+						<div class="card-header">
+							<h3><i class="fa fa-book"></i> Panduan Template Login Hotspot</h3>
+						</div>
+						<div class="card-body">
+							<p> 
+							<h3>Untuk template hotspot3 dan hotspot4.</h3>
+							Pernyesuaian pada file data.js
+							<div>
+								<script class="mr-b-5" style="display: block;" type="text/plain">
+									Tambahakan tag <br> untuk membuat baris baru.
+								</script>
+								<script class="mr-b-5 mr-t-5" style="display: block;" type="text/plain">
+									{"nama" : "Kemangi 41"} menjadi {"nama" : "Hotspot Murah"}
+								</script>	
+									{"notifikasi" : "Mohon maaf internet Telkom dalam perbaikan."} menjadi {"notifikasi" : ""}
+								<script class="mr-b-5 mr-t-5" style="display: block;" type="text/plain">
+									{"expired" : "Mohon maaf Kode Voucher atau User yang Anda masukkan sudah expired. <br><br> Silahkan gunakan Kode Voucher yang masih berlaku,<br> atau lakukan pembayaran untuk mengaktifkan user kembali. <br> Terima Kasih."}
+								</script>
+								</div>
+							<h3>Menampilkan Expired User di Laman Status Hotspot.</h3>
+							Perhatikan protocol yang digunakan https / http.<br>
+							Untuk server local yang menggunakan PC atau Android biasanya menggunakan protocol http.<br>
+							Bagi yang menggunakan Mikhmon V3, sesuaikan Session Name (lihat gambar "wifijoss") untuk menampilkan expired pada laman status hotspot5.
+								<a href="./img/expv3.png" target="_blank" title="MikroTik Clock"><img src="./img/expv3.png" class="img2"></a>
+							Untuk yang masih menggunkan Mikhmon V2 bisa merubah script menjadi seperti gambar berikut.
+								<a href="./img/expv2.png" target="_blank" title="MikroTik Clock"><img src="./img/expv2.png" class="img2"></a>	
+			    			</p>
+						</div> 
+					</div> 
+				</div>
+				<div class="col-12">	
+					<div class="card">
+						<div class="card-header">
+							<h3><i class="fa fa-book"></i> Penambahan QR Code Scanner</h3>
+						</div>
+						<div class="card-body">
+							<p>
+								Tambahkan button di login.html
+								<script class="mr-b-5 mr-t-5" style="display: block;" type="text/plain">
+								<button onclick="window.location='https://laksa19.github.io/myqr';">QR Code</button>
+								</script>
+								Tambahkan script berikut di MikroTik via Terminal.
+								<script class="mr-b-5 mr-t-5" style="display: block;" type="text/plain">
+								/ip hotspot walled-garden ip
+								</script>
+								<script class="mr-b-5 mr-t-5" style="display: block;" type="text/plain">
+								add action=accept comment="Mikhmon QR Code Scanner" disabled=no dst-host=laksa19.github.io
+								</script>
+							</p>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="card-footer bg-dark">
+		Copyright © 2018 Laksamadi Guko
+	</div>
+	</div>
+	</div>
+</div>
+</div>
+</div>
+<script>
+function TopNav() {
+    var x = document.getElementById("TopNav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>

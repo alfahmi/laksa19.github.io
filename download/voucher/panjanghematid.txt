@@ -1,0 +1,52 @@
+	            	            	            	            
+
+<?php
+// Copy Paste ke template editor [Settings -> Template Editor].
+
+if(substr($validity,-1) == "d"){
+  $validity = "Aktif:".substr($validity,0,-1)."Hari";
+}else if(substr($validity,-1) == "h"){
+  $validity = "Aktif:".substr($validity,0,-1)."Jam";
+}
+if(substr($timelimit,-1) == "d"){
+  $timelimit = "Durasi:".substr($timelimit,0,-1)."Hari";
+}else if(substr($timelimit,-1) == "h"){
+  $timelimit = "Durasi:".substr($timelimit,0,-1)."Jam";
+}
+if($datalimit == ""){
+  $kuota = "";
+}else{
+  $kuota = "Kuota:";
+}
+
+?>
+<table class="voucher" style=" width: 230px;">
+  <tbody>
+    <tr><td colspan="4" style="text-align: left; font-size: 10px; font-weight:bold; border-bottom: 1px black solid;">  <?php echo $hotspotname;?>  <span id="num"><?php echo " [$num]";?></span></td></tr>
+    <tr>
+    <td><img src="<?php echo $logo;?>" alt="logo" style="height:30px;width:40px;border:0;"></td>
+<!-- Username = Password    -->
+<?php if($usermode == "vc"){?>
+          <td style="width:100%; text-align:center; border: 1px solid black; font-weight:bold; font-size:20px;"><?php echo $username;?></td>
+        </tr>
+<!-- /  -->
+<!-- Username & Password  -->
+<?php }elseif($usermode == "up"){?>
+          <td style="width:50%; text-align:center; border: 1px solid black; font-weight:bold;">User : <br><?php echo $username;?></td>
+          <td style="width:50%; text-align:center; border: 1px solid black; font-weight:bold;">Pass : <br><?php echo $password;?></td>
+        </tr>
+<?php }?>
+<!-- /  -->
+    <tr>
+      <!-- Price  -->
+      <td colspan="4" style="border-top: 1px solid black; font-weight:bold; font-size:12px"> <?php echo $price;?> <?php echo $validity;?> <?php echo $timelimit;?> <?php echo $kuota.$datalimit;?></td>
+<!-- /  -->
+    </tr>
+    <tr>
+      <!-- Note  -->
+      <td colspan="4" style="border-top: 1px solid black; font-weight:bold; text-align:right;  font-size:10px">Login: http://<?php echo $dnsname;?></td>
+<!-- /  -->
+    </tr>
+<!-- /  -->
+  </tbody>
+</table>

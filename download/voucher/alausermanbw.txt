@@ -1,0 +1,59 @@
+
+<?php
+if($datalimit == ""){$datalimit = "Unlimited";}else{$datalimit = $datalimit;}
+if($timelimit == ""){$timelimit = "Unlimited";}else{$timelimit = $timelimit;}
+?>
+<style type="text/css">
+.rotate {
+  vertical-align: bottom;
+  text-align: center;
+}
+.rotate span {
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  transform: rotate(360deg);
+  white-space: nowrap;
+}
+.bgwhite{
+ -webkit-print-color-adjust: exact;
+ background-color: #fff;
+ color:#000;
+}
+</style>
+
+<table class="voucher border" bgcolor="#000" style="border-left:solid 2px #000; border-right:solid 2px #000; border-top:0px; border-bottom:0px; width: 245px; color:#fff; text-align: center; -webkit-print-color-adjust: exact;">
+<tbody>
+<tr>
+<td colspan="2" style="font-weight:bold;">Voucher Internet</td>
+<td class="rotate bgwhite" rowspan="8" style="vertical-align: top; font-size:20px; font-wight:bold; padding-top:20px; border-left:solid 2px #000;"><span><?php echo $price;?></span></td>
+</tr>
+<tr>
+<td class="bgwhite" >Package</td>
+<td class="bgwhite" ><?php echo $getuprofile;?></td>
+</tr>
+<tr>
+<td class="bgwhite" >Data Limit</td>
+<td class="bgwhite" ><?php echo $datalimit;?></td>
+</tr>
+<tr>
+<td class="bgwhite" >Time Limit</td>
+<td class="bgwhite" ><?php echo $timelimit;?></td>
+</tr>
+<tr>
+<td class="bgwhite" >Validity</td>
+<td class="bgwhite" ><?php echo $validity;?></td>
+</tr>
+<tr>
+<td style="font-size:12px;">Username</td>
+<td style="font-size:12px;">Password</td>
+</tr>
+<tr>
+<td class="bgwhite" ><?php echo $username;?></td>
+<td class="bgwhite" ><?php echo $password;?></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%; font-size:12px;">1Gbps Speed Call:+6285xxxxxxxxx</td>
+</tr>
+</tbody>
+</table>	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          	            	          
