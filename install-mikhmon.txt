@@ -6,5 +6,10 @@ cat >start-mikhmon <<EOL
 cd mikhmonv3
 php -S 0.0.0.0:8080
 EOL
+cat >remove-mikhmon <<EOL
+#bin/bash
+rm -rf mikhmonv3
+EOL
 chmod +x start-mikhmon
+chmod +x remove-mikhmon
 ./start-mikhmon
