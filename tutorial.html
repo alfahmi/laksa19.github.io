@@ -67,10 +67,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			</div>
-			<div class="col-6">
-				<div class="row">
 				<div class="col-12">
 					<div class="card">
 						<div class="card-header">
@@ -93,7 +89,12 @@
 				  			</div>
 						</div>
 					</div>
-				</div>	
+				</div>
+			</div>
+			</div>
+			<div class="col-6">
+				<div class="row">
+					
 				<div class="col-12">	
 					<div class="card">
 						<div class="card-header">
@@ -106,7 +107,9 @@
 							<div>
 								<script class="mr-b-5" style="display: block;" type="text/plain">
 									Tambahakan tag <br> untuk membuat baris baru.
+									Contoh :
 								</script>
+								<div class="box-bordered pd-5">
 								<script class="mr-b-5 mr-t-5" style="display: block;" type="text/plain">
 									{"nama" : "Kemangi 41"} menjadi {"nama" : "Hotspot Murah"}
 								</script>	
@@ -114,6 +117,7 @@
 								<script class="mr-b-5 mr-t-5" style="display: block;" type="text/plain">
 									{"expired" : "Mohon maaf Kode Voucher atau User yang Anda masukkan sudah expired. <br><br> Silahkan gunakan Kode Voucher yang masih berlaku,<br> atau lakukan pembayaran untuk mengaktifkan user kembali. <br> Terima Kasih."}
 								</script>
+								</div>
 								</div>
 							<h3>Menampilkan Expired User di Laman Status Hotspot.</h3>
 							Perhatikan protocol yang digunakan https / http.<br>
@@ -139,12 +143,14 @@
 								<button onclick="window.location='https://laksa19.github.io/myqr';">QR Code</button>
 								</script>
 								Tambahkan script berikut di MikroTik via Terminal.
+								<div class="box-bordered pd-5">
 								<script class="mr-b-5 mr-t-5" style="display: block;" type="text/plain">
 								/ip hotspot walled-garden ip
 								</script>
 								<script class="mr-b-5 mr-t-5" style="display: block;" type="text/plain">
 								add action=accept comment="Mikhmon QR Code Scanner" disabled=no dst-host=laksa19.github.io
 								</script>
+								</div>
 							</p>
 						</div>
 					</div>
