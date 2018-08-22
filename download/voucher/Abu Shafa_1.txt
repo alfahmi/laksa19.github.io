@@ -1,6 +1,17 @@
-/* Template by Abu Shafa */
+/* Template by Abu Shafa 
+
+Note:
+1 lembar total 36 voucher Normal scale 100
+Setting Kertas:
+Kertas : F4 di kostum ukurannya di Printing Preferences - Paper/Quality - Costum ==> width 8.50 inch - height 13.00 inch
+Margin: Minimum / disesuaikan
+Scale: 100 (semakin kecil semakin banyak)
+
+*/
 
 
+
+<!-- MULAI -->
 <div style="overflow:hidden;position:relative;padding: 0px;margin: 2px;border: 1px solid #FFF3E0;width:190px;height:125px;float:left;">
 <div style="height:20px;">
 <div style="float:left;width:45%;">
@@ -59,4 +70,4 @@
 cek status/logout: http://<?php echo $dnsname;?>
 </div>
 </div>
-</div> 	            	          	            	          	            	          	            	          	            	          
+</div> 	            	          	            	          	            	          	            	     <!-- AKHIR -->     	            	          
