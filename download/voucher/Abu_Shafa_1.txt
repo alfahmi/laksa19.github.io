@@ -12,7 +12,7 @@ Scale: 100 (semakin kecil semakin banyak)
 
 
 <!-- MULAI -->
-<div style="overflow:hidden;position:relative;padding: 0px;margin: 2px;border: 1px solid #FFF3E0;width:190px;height:125px;float:left;">
+<div style="overflow:hidden;position:relative;padding: 0px;margin: 2px;border: 1px solid #FFF3E0;width:190px;height:125px;float:left;-webkit-print-color-adjust: exact;">
 <div style="height:20px;">
 <div style="float:left;width:45%;">
 <img style="margin:5px 0 0 5px;width:90%;" src="<?php echo $logo ?>" alt="logo">
