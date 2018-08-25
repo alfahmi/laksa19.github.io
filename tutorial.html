@@ -84,9 +84,6 @@
 			    					<li>Isikan IP, user dan password MikroTik, kemudian save dan klik Connect untuk tes koneksi ke MikroTik.  <br>[IP bisa menggunakan ip yang di ether1, cek dari Winbox : ip->address->ether1].</li>
 				    				<li>Buat User Profile baru, atau update User Profile lama dengan memilih Expired Mode. Sesuikan dengan kebutuhan.</li>
 				    				<li>User Profile sudah siap, selanjutnya sudah bisa add user atau generate user dan cetak voucher.</li>
-								<li>Jika muncul error [Run-time error 5':] saat menjalankan MikhmonServer, maka komponen yang perlu diinstall adalah VC9.<br>
-								Download : <b><a href="https://www.microsoft.com/en-us/download/details.aspx?id=29">VC9 32 bit</a></b> | <b><a href="https://www.microsoft.com/en-us/download/details.aspx?id=15336">VC9 64 bit</a></b>
-								</li>	
 				  				</ol>
 				  				<a class="btn bg-blue pd-10" href="https://www.youtube.com/watch?v=D6B2DBICXpI"> <i class="fa fa-film"></i> Panduan Video</a><br>
 				  			</div>
@@ -151,14 +148,30 @@
 				<div class="col-12">	
 					<div class="card">
 						<div class="card-header">
-							<h3><i class="fa fa-book"></i> Pembuatan User Hotspot</h3>
+							<h3><i class="fa fa-book"></i> Pembuata User Hotspot</h3>
 						</div>
 						<div class="card-body">
 							<p>
 								Validity = Masa Aktif, waktu akan terus berjalan dipakai mautun tidak dipakai sejak login.<br>
 								Time lImit = Durasi, batas penggunaan semalam masa aktif, waktunya akan berhenti jika tidak dipakai sejak login.<br>
-								Jika ingin membuat user dengan validity 30 hari, cukup buat user profile dengan validity 30d. Kemudian generate atau add user dengan user profile tersebut. Time limit tidak perlu diisi.<br>
+								Jika ingin membuat user dengan validity 30 hari, sukup buat user profile dengan validity 30d. Kemudian generate adatu add user dengan user profile tersebut. Time limit tidak perlu diisi.<br>
 								Pembuatan user dengan validity dan time limit  idealnya time limit lebih kecil dari validity.<br> Contoh membuat user dengan time limit 7 hari dan masa aktif 30 hari, maka bisa add user adau generate user dengan time limit 7d dan memilih user profile yang memiliki validity 30d.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">	
+					<div class="card">
+						<div class="card-header">
+							<h3><i class="fa fa-book"></i> Print Voucher</h3>
+						</div>
+						<div class="card-body">
+							<p>
+								Sistem print voucher Mikhmon menggunakan 2 kategori.<br> 
+								1. Berdasarkan nama untuk print satu voucher.<br>
+								2. Berdasarkan comment kode generate untuk print lebih dari satu voucher.<br>
+
+								Untuk print berdasarkan comment kode generate, user yang pernah login dan logout tidak akan ikut diprint. walaupun masih dalam satu kelompok kode generate.
 							</p>
 						</div>
 					</div>
