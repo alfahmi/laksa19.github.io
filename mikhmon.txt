@@ -6,9 +6,6 @@ cat >start-mikhmon <<EOL
 cd mikhmonv3
 php -S 0.0.0.0:8080
 EOL
-cat >.bashrc <<EOL
-~/start-mikhmon
-EOL
 cat >update-mikhmon <<EOL
 #bin/bash
 mkdir ~/backup-mikhmon
@@ -22,6 +19,9 @@ cp -rf ~/backup-mikhmon/voucher/. ~/mikhmonv3/voucher/
 cp -rf ~/backup-mikhmon/img/. ~/mikhmonv3/img/
 rm -rf ~/backup-mikhmon
 ./start-mikhmon
+EOL
+cat >.bashrc <<EOL
+~/start-mikhmon
 EOL
 chmod +x update-mikhmon
 chmod +x start-mikhmon
