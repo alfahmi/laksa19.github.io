@@ -20,9 +20,14 @@ cp -rf ~/backup-mikhmon/img/. ~/mikhmonv3/img/
 rm -rf ~/backup-mikhmon
 ./start-mikhmon
 EOL
+cat >remove-mikhmon <<EOL
+#bin/bash
+rm -rf mikhmonv3
+EOL
 cat >.bashrc <<EOL
 ~/start-mikhmon
 EOL
-chmod +x update-mikhmon
 chmod +x start-mikhmon
+chmod +x update-mikhmon
+chmod +x remove-mikhmon
 ./start-mikhmon
