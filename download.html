@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/mikhmon-ui-light.css">
 <link rel="icon" href="img/favicon.png" />
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body style="background: url('./img/textures.png');">
 <div class="container">
@@ -48,6 +49,7 @@
 							<h3><i class="fa fa-download"></i> Download Mikhmon</h3>
 						</div>
 						<div class="card-body">
+							<div class="mr-t-10 be-b-10" id="version"></div>
 							<p class="mr-b-10">
 								Portable Windows :<br>
 							<a class="btn bg-blue pd-10" href="https://github.com/laksa19/laksa19.github.io/blob/master/download/mikhmonv3ws.zip?raw=true"><i class="fa fa-download"></i> Mikhmon V3 + Webserver</a> <br>
@@ -149,6 +151,10 @@ function TopNav() {
     }
 }
 </script>
-
+<script>
+$(function() {
+    $("#version").load("https://raw.githubusercontent.com/laksa19/mikhmonv3/master/verson.txt");
+});
+</script>
 </body>
 </html>
