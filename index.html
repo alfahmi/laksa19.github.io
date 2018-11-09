@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/mikhmon-ui-light.css">
 <link rel="icon" href="img/favicon.png" />
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
@@ -100,7 +101,8 @@
 					</div>
 					<div class="card-body">
 						<img class="img1" src="img/mikhmon.png">
-					</div> 
+					</div>
+					<div id="version"></div>
 				</div> 
 			</div>
 <div align="center" class="col-8">
@@ -136,6 +138,11 @@ function TopNav() {
         x.className = "topnav";
     }
 }
+</script>
+<script>
+$(function() {
+    $("#version").load("https://raw.githubusercontent.com/laksa19/mikhmonv3/master/verson.txt");
+});
 </script>
 </body>
 </html>
