@@ -51,7 +51,7 @@ else{ $color = "#FFFFFF";}
 <table class="voucher" style="width: 230px;">
   <tbody>
     <tr>
-      <td style="font-weight: bold; border-right: 1px solid black; background-color:<?php echo $color;?>; -webkit-print-color-adjust: exact;" rowspan="4"><span><?= $price; ?></span></td>
+      <td class="rotate" style="font-weight: bold; border-right: 1px solid black; background-color:<?php echo $color;?>; -webkit-print-color-adjust: exact;" rowspan="4"><span><?= $price; ?></span></td>
       <td style="font-weight: bold" colspan="2"><?= $hotspotname; ?> </td>
       <?php if ($qr == "yes") { ?>
       <td style="" rowspan="3"><img style="width: 60px; height: 60px;" src="<?= $qrcode ?>" alt="qrcode"></td>
