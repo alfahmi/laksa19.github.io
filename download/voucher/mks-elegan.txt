@@ -1,4 +1,9 @@
 <?php
+/*
+ 1 lembar A4 total 16 voucher scale 100  
+  1 lembar A4 total 36 voucher scale 68
+*/
+
 if(substr($validity,-1) == "d"){
 $validity = "Masa aktif:".substr($validity,0,-1)."Hari";
 }else if(substr($validity,-1) == "h"){
