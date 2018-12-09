@@ -1,79 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MIKHMON -MikroTik Hotspot Monitor-</title>
-<meta name="description" content="Mikrotik Hotspot Monitor" />
-<meta name="keywords" content="mikhmon,mikrotik,voucher,routeros,api mikrotik,rtrwnet, rtrw/net,hotspot" />
-<meta name="Revisit-After" content="1 Days"/>
-<meta name="robots" content="index, follow"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/mikhmon-ui-light.css">
-<link rel="icon" href="img/favicon.png" />
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-1716315177239884",
-    enable_page_level_ads: true
-  });
-</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MIKHMON -MikroTik Hotspot Monitor-</title>
+	<meta name="description" content="Mikrotik Hotspot Monitor" />
+	<meta name="keywords" content="mikhmon,mikrotik,voucher,routeros,api mikrotik,rtrwnet, rtrw/net,hotspot" />
+	<meta name="Revisit-After" content="1 Days" />
+	<meta name="robots" content="index, follow" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/mikhmon-ui-light.css">
+	<link rel="icon" href="img/favicon.png" />
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
+
 <body style="background: url('./img/textures.png');">
-<div class="container">
-	<div class="row">
-		<div class="col-10 mr-a" style="float:none;">
-			<div class="card bg-light box-shadow radius-3">
-			<div class="row">
-				<div class="col-12">
-					<div class="radius-t-3 text-center bg-dark"><b style="font-size: 50px; text-shadow: 1px 1px 4px #424242;" class="text-light">MIKHMON</b></div>
-				</div>
-				<div class="col-12" style="font-size:14px;">
-					<div class="topnav" id="TopNav">
-  						<a href="./"><i class="fa fa-home"></i></a>
-  						<a href="./fitur.html">Fitur</a>
-  						<div class="dropdown">
-    						<button class="dropbtn">Download
-      							<i class="fa fa-caret-down"></i>
-    						</button>
-    						<div class="dropdown-content">
-      							<a href="./download.html">MIKHMON</a>
-      							<a href="./template.html">Template Login Page</a>
-      							<a href="./voucher.html">Template Voucher</a>
-    						</div>
-  						</div> 
-  						<a href="./tutorial.html">Tutorial</a>
-  						<a href="./support.html" class="active">Dukungan</a>
-  						<a href="./about.html">About</a>
-  						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="TopNav()">&#9776;</a>
+	<div class="container">
+		<div class="row">
+			<div class="col-10 mr-a" style="float:none;">
+				<div class="card bg-light box-shadow radius-3">
+					<div class="row">
+						<div class="col-12">
+							<div class="radius-t-3 text-center bg-dark"><b style="font-size: 50px; text-shadow: 1px 1px 4px #424242;" class="text-light">MIKHMON</b></div>
+						</div>
+						<div id="menu" class="col-12" style="font-size:14px;">
+						</div>
+						<div class="col-12">
+							<div class="card">
+								<div class="card-body">
+									Segera hadir.
+								</div>
+							</div>
+						</div>
+
 					</div>
-				</div>
-			<div class="col-12">
-				<div class="card">
-					<div class="card-body">
-				Segera hadir.
+					<div class="card-footer bg-dark">
+						Copyright © 2018 Laksamadi Guko
 					</div>
 				</div>
 			</div>
-
 		</div>
-		<div class="card-footer bg-dark">
-		Copyright © 2018 Laksamadi Guko
 	</div>
 	</div>
-	</div>
-</div>
-</div>
-</div>
-<script>
-function TopNav() {
-    var x = document.getElementById("TopNav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
+	<script>
+		$(function () {
+			$("#menu").load("./menu.html");
+		});
+	</script>
 
 </body>
+
 </html>
