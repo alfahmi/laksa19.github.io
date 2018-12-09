@@ -26,12 +26,11 @@
             x.className = "topnav";
         }
     }
-    var host = window.location.host;
     var uri = window.location.pathname;
     var uri = uri.split("/");
     var uri = uri[uri.length - 1];
     var uri = uri.split(".html")[0];
-    if (host === "laksa19.github.io") {
+    if (uri === "") {
         $(function () {
             $("#home").addClass("active");
         });
