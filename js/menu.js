@@ -32,36 +32,28 @@ var uri = window.location.pathname;
 var uri = uri.split("/");
 var uri = uri[uri.length - 1];
 var uri = uri.split(".html")[0];
-if (uri === "") {
-    $(function () {
-        $("#home").addClass("active");
-    });
-} else if (uri === "fitur") {
-    $(function () {
-        $("#fitur").addClass("active");
-    });
-} else if (uri === "download") {
+
+var page = [
+    "",
+    "home",
+    "about",
+    "download",
+    "fitur",
+    "support",
+    "template",
+    "tutorial",
+    "voucher",
+    "404",
+];
+
+var indexPage = page.indexOf(uri);
+console.log(uri);
+if (uri === "download" || uri === "template" || uri === "voucher") {
     $(function () {
         $("#download").addClass("active");
     });
-} else if (uri === "template") {
+} else if (indexPage >= 1) {
     $(function () {
-        $("#download").addClass("active");
-    });
-} else if (uri === "voucher") {
-    $(function () {
-        $("#download").addClass("active");
-    });
-} else if (uri === "tutorial") {
-    $(function () {
-        $("#tutorial").addClass("active");
-    });
-} else if (uri === "support") {
-    $(function () {
-        $("#support").addClass("active");
-    });
-} else if (uri === "about") {
-    $(function () {
-        $("#about").addClass("active");
+        $("#" + uri).addClass("active");
     });
 }
