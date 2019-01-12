@@ -16,7 +16,7 @@ document.write(`
     <a id="support" href="./support.html">Dukungan</a>
     <a id="videos" href="./videos.html">Videos</a>
     <a id="about" href="./about.html">About</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="TopNav()">&#9776;</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="TopNav()"><span id="amenu"></span> &#9776;</a>
 </div>
 `);
 
@@ -59,3 +59,4 @@ if (uri === "download" || uri === "template" || uri === "voucher") {
         $("#" + uri).addClass("active");
     });
 }
+document.getElementById("amenu").innerHTML = uri.toUpperCase();
