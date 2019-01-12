@@ -14,6 +14,7 @@ document.write(`
     </div>
     <a id="tutorial" href="./tutorial.html">Tutorial</a>
     <a id="support" href="./support.html">Dukungan</a>
+    <a id="videos" href="./videos.html">Videos</a>
     <a id="about" href="./about.html">About</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="TopNav()">&#9776;</a>
 </div>
@@ -43,6 +44,7 @@ var page = [
     "template",
     "tutorial",
     "voucher",
+    "videos",
     "404",
 ];
 
