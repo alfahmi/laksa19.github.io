@@ -13,7 +13,7 @@ document.write(`
         </div>
     </div>
     <a id="tutorial" href="./tutorial.html">Tutorial</a>
-    <a id="support" href="./support.html">Dukungan</a>
+    <a id="support" href="./support.html">Support</a>
     <a id="videos" href="./videos.html">Videos</a>
     <a id="tips" href="./tips.html">Tips & Trick</a>
     <a id="about" href="./about.html">About</a>
