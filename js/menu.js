@@ -13,6 +13,7 @@ document.write(`
         </div>
     </div>
     <a id="tutorial" href="./tutorial.html">Tutorial</a>
+    <a id="printBT" href="./printBT.html">Print BT</a>
     <a id="support" href="./support.html">Support</a>
     <a id="videos" href="./videos.html">Videos</a>
     <a id="tips" href="./tips.html">Tips & Trick</a>
@@ -44,6 +45,7 @@ var page = [
     "support",
     "template",
     "tutorial",
+    "printBT",
     "voucher",
     "videos",
     "tips",
