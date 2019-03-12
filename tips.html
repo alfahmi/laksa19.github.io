@@ -27,7 +27,7 @@
 							<script src="./js/menu.js"></script>
 						</div>
 						<div class="row">
-							<div class="col-6">
+							<div class="col-12">
 								<div class="col-12">
 									<div class="card">
 										<div class="card-header">
@@ -86,7 +86,7 @@
 														</ul>
 													</li>
 												</lo>
-												<br>Detail pengaturan pada gambar berikut.
+												<br>Detail pengaturan pada gambar berikut.<br>
 												<img src="./img/tnt-ntp.jpg" class="img2">
 
 											</p>
@@ -94,7 +94,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-12">
 								<div align="center" class="col-12">
 									<div class="card" style="background-color: none;">
 										<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -106,7 +106,45 @@
 										</script>
 									</div>
 								</div>
-								<div class="col-12">
+								<div class="col-12" id="1">
+									<div class="card">
+										<div class="card-header">
+											<h3>Set last Date & Time</h3>
+										</div>
+										<div class="card-body">
+											<p>
+												<b>(Set last Date & Time) Solusi Pertama untuk menghindari user terhapus setelah RB reboot.</b>
+												<br>
+												1. Buat script (System --> Script) dengan <br>Name: datetime<br><br>
+												2. Buat scheduler (System --> Scheduler) dengan<br> Name : datetime<br>Interval : <b>00:05:00</b><br>On event sebagai berikut<br>
+												<code style="display: block; white-space: pre-wrap">
+:local date [sys clock get date]; 
+:local time [/sys clock get time]; 
+/sys scr set source="/sys clock set date=$date time=$time" [find where name=datetime];</code><br>
+												3. Buat schedule (System --> Scheduler) dengan<br> Name : datetime<br> Start Time : <b>startup</b><br>Interval : <b>00:00:00</b><br>On event sebagai berikut<br>
+												<code style="display: block; white-space: pre-wrap">
+/sys scr run datetime</code><br>
+												<b>Cara kerja.</b><br>Scheduler akan menyimpan date dan time ke script setiap 5 menit, atau sesuai kebutuhan Anda,  silakan ubah interval di scheduler datetime. <br>Ketika power off kemudian Mikrotik dinyalakan kembali, maka date dan time akan dikembalikan sesuai data yang tersimpan di script datetime.<br>Dan selanjutnya akan update otomatis sesuai pengaturan di SNTP-Client.
+												<br>Detail pengaturan pada gambar berikut.<br>
+												<img src="./img/setdatetime.png" class="img2">
+
+											</p>
+										</div>
+									</div>
+								</div>
+							<div class="col-12">
+								<div align="center" class="col-12">
+									<div class="card" style="background-color: none;">
+										<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+										<!-- ads1 -->
+										<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1716315177239884" data-ad-slot="9229714223"
+										 data-ad-format="auto" data-full-width-responsive="true"></ins>
+										<script>
+											(adsbygoogle = window.adsbygoogle || []).push({});
+										</script>
+									</div>
+								</div>
+								<div class="col-12" id="2">
 									<div class="card">
 										<div class="card-header">
 											<h3>Delay Startup</h3>
@@ -121,19 +159,19 @@
 												saat startup.<br>
 												Buat scheduler (System --> Scheduler) dengan <br>Start Time : <b>startup</b> dan On event sebagai berikut<br>
 												<code style="display: block; white-space: pre-wrap">
-													/sys sch set disabled=yes [find where interval=1d];
-													/sys sch set disabled=yes [find where interval=2d];
-													/sys sch set disabled=yes [find where interval=7d];
-													/sys sch set disabled=yes [find where interval=30d];
-													:delay 30s;
-													/sys sch set disabled=no [find where interval=1d];
-													/sys sch set disabled=no [find where interval=2d];
-													/sys sch set disabled=no [find where interval=7d];
-													/sys sch set disabled=no [find where interval=30d];
+/sys sch set disabled=yes [find where interval=1d];
+/sys sch set disabled=yes [find where interval=2d];
+/sys sch set disabled=yes [find where interval=7d];
+/sys sch set disabled=yes [find where interval=30d];
+:delay 30s;
+/sys sch set disabled=no [find where interval=1d];
+/sys sch set disabled=no [find where interval=2d];
+/sys sch set disabled=no [find where interval=7d];
+/sys sch set disabled=no [find where interval=30d];
 												</code><br>
 												<b><i>*Sesuaikan interval dan delay pada script dengan kebutuhan Anda.</i></b>
 												<br><b><i>*interval = validity user profile.</i></b>
-												<br>Detail pengaturan pada gambar berikut.
+												<br>Detail pengaturan pada gambar berikut.<br>
 												<img src="./img/tnt-delaystartup.png" class="img2">
 
 											</p>
