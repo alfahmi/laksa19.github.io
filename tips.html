@@ -121,10 +121,12 @@
 :local date [sys clock get date]; 
 :local time [/sys clock get time]; 
 /sys scr set source="/sys clock set date=$date time=$time" [find where name=datetime];</code><br>
-												3. Buat schedule (System --> Scheduler) dengan<br> Name : datetime-startup<br> Start Time : <b>startup</b><br>Interval : <b>00:00:00</b><br>On event sebagai berikut<br>
+												3. Buat scheduler (System --> Scheduler) dengan<br> Name : datetime-startup<br> Start Time : <b>startup</b><br>Interval : <b>00:00:00</b><br>On event sebagai berikut<br>
 												<code style="display: block; white-space: pre-wrap">
 /sys scr run datetime</code><br>
-												<b>Cara kerja.</b><br>Scheduler akan menyimpan date dan time ke script setiap 5 menit, atau sesuai kebutuhan Anda,  silakan ubah interval di scheduler datetime. <br>Ketika listrik padam kemudian Mikrotik dinyalakan kembali, maka date dan time akan dikembalikan sesuai data yang tersimpan di script datetime.<br>Dan selanjutnya akan update otomatis sesuai pengaturan di SNTP-Client.
+												<b>Cara kerja.</b><br>Scheduler akan menyimpan date dan time ke script datetime(1) setiap 5 menit, atau sesuai kebutuhan Anda,  silakan ubah interval di scheduler datetime(2). <br>
+												Ketika listrik padam kemudian Mikrotik dinyalakan kembali, maka date dan time akan dikembalikan sesuai data terakhir yang tersimpan di script datetime(1).<br>
+												Dan selanjutnya akan update otomatis sesuai pengaturan di SNTP-Client.
 												<br>Detail pengaturan pada gambar berikut.<br>
 												<img src="./img/setdatetime.png" class="img2">
 
