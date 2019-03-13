@@ -115,7 +115,7 @@
 											<p>
 												<b>(Set last Date & Time) Solusi pertama untuk menghindari user terhapus setelah RB reboot atau listrik padam.</b>
 												<br>
-												1. Buat script (System --> Script) dengan <br>Name: datetime<br><br>
+												1. Buat script (System --> Script) dengan <br>Name: datetime<br><b>*On event akan diisi otomatis oleh scheduler datetime</b><br><br>
 												2. Buat scheduler (System --> Scheduler) dengan<br> Name : datetime<br>Interval : <b>00:05:00</b><br>On event sebagai berikut<br>
 												<code style="display: block; white-space: pre-wrap">
 :local date [sys clock get date]; 
