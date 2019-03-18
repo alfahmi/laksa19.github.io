@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<iframe id="x" src="https://kemangi.mikhmon.online/admin.php?id=login"></iframe>
+<button onclick="myFunction()">klik</button>	
+<script>
+function myFunction() {
+  var iframe = document.getElementById("x");
+  var elmnt = iframe.contentWindow.document.getElementsByTagName("input")[2];
+  elmnt.click();
+}
+</script>
+</body>
+</html>
