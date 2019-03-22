@@ -1,4 +1,5 @@
- <?php
+						
+<?php
 // Copy Paste ke template editor [Settings -> Template Editor].
 
 if(substr($validity,-1) == "d"){
@@ -40,7 +41,13 @@ elseif($getprice == "70000"){ $color = "#FF0000";}
 // else color
 else{ $color = "#BA68C8";}
 ?>  
- <!--mks-mulai-->	          	            	            	            	            	            	            	            	            	            <table style="display: inline-block;border-collapse: collapse;border: 1px solid #666;margin: 2.5px;width: 190px;overflow:hidden;position:relative;padding: 0px;margin: 2px;border: 1px solid #000000;">
+ <!--mks-mulai-->	   
+<style>
+.qrcode{
+		height:60px;
+		width:60px;
+}
+</style>        	            	            	            	            	            	            	            	            	            <table style="display: inline-block;border-collapse: collapse;border: 1px solid #666;margin: 2.5px;width: 190px;overflow:hidden;position:relative;padding: 0px;margin: 2px;border: 1px solid #000000;">
 <tbody>
 <tr>
 <td style="color:#666;" valign="top">
@@ -87,7 +94,7 @@ Buka brouser ketik  : mks.net
 <div style="clear:both;padding:0 2.5px;font-size:7px;font-weight:bold;color:#000000">
 <?php echo $validity;?><br> <?php echo $timelimit;?> <br><?php echo $datalimit;?>
 </div>
-<div style="float:right;padding:1px;text-align:right;width:70%;margin:0 5px -20px 0;"><img style="width:100%;" src="<?php echo $qrcode ?>" alt="qrcode"></div>
+<div style="float:right;padding:1px;text-align:right;width:70%;margin:0 5px -20px 0;"><?= $qrcode ?></div>
 </td>		
 </tr>
 <tr>
@@ -104,3 +111,4 @@ CS: <b>0822 4072 4572</b>
 </tbody>
 </table>
  <!--mks-akhir-->
+	        	        

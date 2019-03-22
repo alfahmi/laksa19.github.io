@@ -1,7 +1,9 @@
+																		
+
 <?php
 /*
- 1 lembar A4 total 16 voucher scale 100  
-  1 lembar A4 total 36 voucher scale 68
+ 1 lembar A4 total 14 voucher scale 100  
+  1 lembar A4 total 60 voucher scale 50
 */
 
 if(substr($validity,-1) == "d"){
@@ -38,8 +40,13 @@ font-size: 20px;}.rotate span {
 writing-mode: vertical-rl;
 transform: rotate(180deg);
 white-space: nowrap;}
-<!--mks-mulai-->
+.qrcode{
+		height:100px;
+		width:100px;
+    border: 2px solid <?= $color;?>;
+}
 </style>
+<!--mks-mulai-->
 <!--mks-border-mulai-->
 <table class="voucher" style="border: 2px solid <?php echo $color;?>;width:365px;">
 <!--mks-border-akhir-->	
@@ -54,9 +61,9 @@ white-space: nowrap;}
 <!--mks-logo-akhir-->	
 <!--mks-qr-mulai-->	
 <?php if($qr == "yes"){?>
-<td style="" rowspan="4"><img style="border: 2px solid<?php echo $color;?>; 100px; height: 100px;" src="<?php echo $qrcode ?>" alt="qrcode"></td>
+<td style="" rowspan="4"><?= $qrcode ?></td>
 <?php }else{?>
-<td style="" rowspan="4"><img style="border: 2px solid<?php echo $color;?>; 100px; height: 100px;" src="<?php echo $qrcode ?>" alt="qrcode"></td>
+<td style="" rowspan="4"><?= $qrcode ?></td>
 <?php }?>
 </tr>
 <!--mks-qr-akhir-->
@@ -83,3 +90,4 @@ Login:<?php echo $dnsname;?> -  - Cs : 085366567572
 </table> 
 <!--mks-cs-akhir-->
 <!--mks-selesai-->
+	        	        	        

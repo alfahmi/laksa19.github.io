@@ -33,6 +33,10 @@ if (substr($timelimit, -1) == "d" & strlen($timelimit) > 3) {
   transform: rotate(180deg);
   white-space: nowrap;
 }
+.qrcode{
+		height:60px;
+		width:60px;
+}
 </style>
 
 <table class="voucher" style="width: 230px;">
@@ -41,7 +45,7 @@ if (substr($timelimit, -1) == "d" & strlen($timelimit) > 3) {
       <td style="font-weight: bold; border-right: 1px solid black;" class="rotate" rowspan="4"><span><?= $price; ?></span></td>
       <td style="font-weight: bold" colspan="2"><?= $hotspotname; ?> </td>
       <?php if ($qr == "yes") { ?>
-      <td style="" rowspan="3"><img style="width: 60px; height: 60px;" src="<?= $qrcode ?>" alt="qrcode"></td>
+      <td style="" rowspan="3"><?= $qrcode ?></td>
       <?php 
     } else { ?>
       <td style="" rowspan="3"><img style="width: 60px; height: 60px;" src="<?= $logo ?>" alt="logo"></td>  
@@ -61,7 +65,7 @@ if (substr($timelimit, -1) == "d" & strlen($timelimit) > 3) {
       <td style="font-size: 10px;"><?= $validity; ?> <?= $timelimit; ?> <?= $datalimit; ?></td>
     </tr>
     <tr>
-      <td colspan="3" style="font-size: 10px;">Login: http://<?= $dnsname; ?> <span id="num"> <?= $comment; ?> <?php echo " [$num]"; ?></span></td>
+      <td colspan="3" style="font-size: 10px;">Login: http://<?= $dnsname; ?> <span id="num"> <?= " [$num]"; ?></span></td>
     </tr>
   </tbody>
 </table>	            	          	            	          	            	          

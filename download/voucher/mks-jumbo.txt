@@ -32,6 +32,12 @@ elseif($getprice == "70000"){ $color = "#FF0000";}
 else{ $color = "#BA68C8";}
 ?>  
  <!--mks-mulai-->
+<style>
+.qrcode{
+		height:200px;
+		width:200px;
+}
+</style> 
 <table class="voucher" style="border: 2px <?php echo $color ?> solid; border-radius: 1px; text-align: center; font-size: 2px; font-weight:bold; ">
 <tbody>
 <tr>
@@ -84,7 +90,7 @@ else{ $color = "#BA68C8";}
 <?php echo $validity;?><br> <?php echo $timelimit;?> <br> <?php echo $datalimit;?>
 <?php echo $comment;?>	
 </td>
-<div style="padding:center;width:100%;margin:0 5px -20px 0;"><img style="width:100%;" src="<?php echo $qrcode ?>" alt="qrcode"></div>
+<div><?= $qrcode ?></div>
 </td>		
 </tr>
 <!--mks-cs-->	
@@ -103,3 +109,4 @@ else{ $color = "#BA68C8";}
 </tbody>
 </table>
 <!--mks-template-selesai-By-isber nendi-mks.net-->	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        
+	        	        	        	        	        	        
