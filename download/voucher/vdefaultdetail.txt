@@ -18,7 +18,7 @@ if (substr($timelimit, -1) == "d" & strlen($timelimit) > 3) {
   $timelimit = "Durasi:" . (substr($timelimit, 0, -1) * 7) . "Hari";
 }
 if ($datalimit == "") {
-  $kuota = "";
+  $kuota = " Unlimited";
 } else {
   $kuota = "Kuota:";
 }
