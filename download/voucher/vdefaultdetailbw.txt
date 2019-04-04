@@ -22,13 +22,13 @@ if ($datalimit == "") {
 } else {
   $kuota = "Kuota:";
 }
+?>
 <style>
 .qrcode{
 		height:80px;
 		width:80px;
 }
 </style>
-?>
 <table class="voucher" style=" width: 220px;">
   <tbody>
 <!-- Logo Hotspotname -->
