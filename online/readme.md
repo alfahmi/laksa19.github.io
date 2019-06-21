@@ -18,7 +18,7 @@
 ![online3](https://raw.githubusercontent.com/laksa19/laksa19.github.io/master/img/online3.png)
 #### Permasalahan kode error 504 muncul biasanya disebabkan oleh beberapa faktor berikut.
 
-1. VPN tidak terkoneksi dalam hal ini adalah L2TP koneksi default untuk Mikhmon Online. Hal ini bisa terjadi disebabkan oleh gangguan di ISP, baik gangguan jaringan, atau sengaja diblok oleh ISP. Selain itu, bisa juga settingan Mikrotik Anda tidak mengijinkan untuk koneksi L2TP. Silakan cek settingan Mikrotiknya atau hubungi teknisi masing-masing. *Konenksi internet yang lancar tidak menjamin koneksi.
+1. VPN tidak terkoneksi dalam hal ini adalah L2TP koneksi default untuk Mikhmon Online. Hal ini bisa terjadi disebabkan oleh gangguan di ISP, baik gangguan jaringan, atau sengaja diblok oleh ISP. Selain itu, bisa juga settingan Mikrotik Anda tidak mengijinkan untuk koneksi L2TP. Silakan cek settingan Mikrotiknya atau hubungi teknisi masing-masing. *Konenksi internet yang lancar tidak menjamin koneksi untuk L2TP atau service VPN lainnya lancar juga, semua tergantung pada ISP masing-masing.
 
 2. Mikrotik sedang bekerja keras. CPU Mikrotiknya sedang menangani banyak tugas sehingga penggunaan mencapai > 70%. Ini biasa terjadi pada Mikrotik yang CPUnya hanya memiliki 1 core dengan clock-speed rendah sehingga tidak dapat memproses permintaan data dari Mikhmon.
 
