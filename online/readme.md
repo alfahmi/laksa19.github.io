@@ -15,9 +15,9 @@
 ![online5](https://raw.githubusercontent.com/laksa19/laksa19.github.io/master/img/online5.png)
 
 ### Permasalahan 2
-#### Kode Error 504
+#### Akses lambat dan Kode Error 504
 ![online3](https://raw.githubusercontent.com/laksa19/laksa19.github.io/master/img/online3.png)
-#### Permasalahan kode error 504 muncul biasanya disebabkan oleh beberapa faktor berikut.
+#### Permasalahan akses lambat dan kode error 504 muncul biasanya disebabkan oleh beberapa faktor berikut.
 
 1. VPN tidak terkoneksi dalam hal ini adalah L2TP koneksi default untuk Mikhmon Online. Hal ini bisa terjadi disebabkan oleh gangguan di ISP, baik gangguan jaringan, atau sengaja diblok oleh ISP. Selain itu, bisa juga settingan Mikrotik Anda tidak mengijinkan untuk koneksi L2TP. Silakan cek settingan Mikrotiknya atau hubungi teknisi masing-masing. *Konenksi internet yang lancar tidak menjamin koneksi untuk L2TP atau service VPN lainnya lancar juga, semua tergantung pada ISP masing-masing.
 
@@ -31,3 +31,5 @@
 2. Maksimalkan Settingan Mikrotik Anda. Hubungi jasa setting Mikrotik yang Handal.
 
 3. Disable Live Report di Session Settings, agar aplikasi tidak memuat data penjualan di Dashboard. Cek Penanganan 1 no. 1 untuk letak Live Report.
+
+4. Setelah VPN terkoneksi, bersihkan cookie browser Anda agar dapat login kembali ke aplikasi. 
