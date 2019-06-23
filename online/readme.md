@@ -3,6 +3,7 @@
 
 ### Permasalahan 1. 
 #### Mikhmon Online tidak terkoneksi seperti di gambar berikut.
+![online6](https://raw.githubusercontent.com/laksa19/laksa19.github.io/master/img/online6.png)
 ![online1](https://raw.githubusercontent.com/laksa19/laksa19.github.io/master/img/online1.png)
 
 ### Penanganan 1.
