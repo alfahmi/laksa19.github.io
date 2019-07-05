@@ -48,11 +48,12 @@ var page = [
     "voucher",
     "videos",
     "tips",
+    "getdownload",
 ];
 
 var indexPage = page.indexOf(uri);
 console.log(uri);
-if (uri === "download" || uri === "template" || uri === "voucher" || "getdownload") {
+if (uri === "download" || uri === "template" || uri === "voucher" || uri === "getdownload") {
     $(function () {
         $("#download").addClass("active");
     });
