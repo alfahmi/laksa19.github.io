@@ -48,7 +48,6 @@ var page = [
     "voucher",
     "videos",
     "tips",
-    "getdownload",
 ];
 
 var indexPage = page.indexOf(uri);
