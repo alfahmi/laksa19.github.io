@@ -1,5 +1,4 @@
-document.write(`
-<script>
+
 var dl = "https://github.com/laksa19/laksa19.github.io/blob/master/download/";
         var url = window.location+ '';
         var getDLink = url.split("?");
@@ -29,16 +28,15 @@ var dl = "https://github.com/laksa19/laksa19.github.io/blob/master/download/";
                 }, 1000);
             }
 
-        if(DLink == "mikhmon_portable"){
+        if(RDLink == "mikhmon_portable"){
             getLink(dl+"mikhmonv3ws.zip?raw=true")
-        }else if(DLink == "mikhmon_for_webserver"){
+        }else if(RDLink == "mikhmon_for_webserver"){
             getLink("https://github.com/laksa19/mikhmonv3/archive/master.zip")
-        }else if(DLink == "update.zip"){
+        }else if(RDLink == "update.zip"){
             getLink(dl+"update.zip?raw=true")
-        }else if(DLink == "template_hotspot"){
+        }else if(RDLink == "template_hotspot"){
             getLink("https://codeload.github.com/laksa19/template-hotspot-mikhmon/zip/master")
-        }else if(DLink == "vc9"){
+        }else if(RDLink == "vc9"){
             getLink("ss")
         }
-</script>
-`;
+
