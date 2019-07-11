@@ -35,7 +35,7 @@ var dl = "https://github.com/laksa19/laksa19.github.io/blob/master/download/";
         }else if(RDLink == "update.zip"){
             getLink(dl+"update.zip?raw=true")
         }else if(RDLink == "template_hotspot"){
-            getLink("https://codeload.github.com/laksa19/template-hotspot-mikhmon/zip/master")
+            getLink("https://codeload.github.com/laksa19/template-hotspot-mikhmon/zip/master.zip")
         }else if(RDLink == "vc9"){
             getLink("ss")
         }
