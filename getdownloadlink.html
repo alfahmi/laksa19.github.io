@@ -12,11 +12,20 @@
 	<link rel="stylesheet" href="css/mikhmon-ui-light.css">
 	<link rel="icon" href="img/favicon.png" />
     	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	
+	<script type="text/javascript">    
+            var element 
+            function loadGetDL() { 
+            element = document.createElement("script"); 
+            element.src = "./js/getDL.js?t=" + new Date().getTime(); 
+            element.type = "text/javascript"; 
+            element.id = "getDL"; 
+            document.body.appendChild(element); 
+            } 
+        </script>
    
 </head>
 
-<body style="background: url('./img/textures.png');">
+<body onload="loadGetDL()" style="background: url('./img/textures.png');">
 	<div class="container">
 		<div class="row">
 			<div class="col-10 mr-a" style="float:none;">
@@ -86,16 +95,7 @@
 		</div>
 	</div>
 	</div>
-	<script type="text/javascript">    
-            var element 
-            function loaded() { 
-            element = document.createElement("script"); 
-            element.src = "./js/getDL.js?t=" + new Date().getTime(); 
-            element.type = "text/javascript"; 
-            element.id = "getDL"; 
-            document.body.appendChild(element); 
-            } 
-        </script>
+
 </body>
 
 </html>
