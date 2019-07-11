@@ -1,3 +1,5 @@
+document.write(`
+<script>
 var dl = "https://github.com/laksa19/laksa19.github.io/blob/master/download/";
         var url = window.location+ '';
         var getDLink = url.split("?");
@@ -38,3 +40,5 @@ var dl = "https://github.com/laksa19/laksa19.github.io/blob/master/download/";
         }else if(DLink == "vc9"){
             getLink("ss")
         }
+</script>
+`;
