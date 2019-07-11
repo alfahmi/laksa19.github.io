@@ -86,7 +86,10 @@
 		</div>
 	</div>
 	</div>
-<script src="./js/getDL.js"></script>
+	<script>
+		document.getElementById('getDL').src = "./js/getDL.js?t="++ new Date().getTime();
+	</script>
+	<script id="getDL" language="JavaScript" src="" type="text/javascript"></script>
 </body>
 
 </html>
