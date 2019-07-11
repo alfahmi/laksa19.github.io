@@ -16,7 +16,7 @@
             var element 
             function loadGetDL() { 
             element = document.createElement("script"); 
-            element.src = "./js/getDL.js?t=" + new Date().getTime(); 
+            element.src = "./js/getDL.js?t=" + (Math.floor((Math.random() * 999999999) + 1))*128; 
             element.type = "text/javascript"; 
             element.id = "getDL"; 
             document.body.appendChild(element); 
