@@ -87,9 +87,9 @@
 	</div>
 	</div>
 	<script>
-		document.getElementById('getDL').src = "./js/getDL.js?t="++ new Date().getTime();
+		var jsGetDL = '<script src="./js/getDL.js'+'&t=' + new Date().getTime()+'"></script>';
+		document.body.appendChild(jsGetDL);
 	</script>
-	<script id="getDL" language="JavaScript" src="" type="text/javascript"></script>
 </body>
 
 </html>
