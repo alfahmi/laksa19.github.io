@@ -12,7 +12,16 @@
 	<link rel="stylesheet" href="css/mikhmon-ui-light.css">
 	<link rel="icon" href="img/favicon.png" />
     	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<!-- -->
+	<script type="text/javascript">    
+            var element 
+            function loaded() { 
+            element = document.createElement("script"); 
+            element.src = "./js/getDL.js?t=" + new Date().getTime(); 
+            element.type = "text/javascript"; 
+            element.id = "getDL"; 
+            document.body.appendChild(element); 
+            } 
+        </script>
    
 </head>
 
@@ -86,8 +95,6 @@
 		</div>
 	</div>
 	</div>
-
-<script src="./js/getDL.js"></script>
 
 </body>
 
