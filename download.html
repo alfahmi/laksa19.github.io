@@ -128,7 +128,7 @@
 
 	<script>
 		$(function () {
-			$.getJSON("https://raw.githubusercontent.com/laksa19/mikhmonv3/master/verson.txt", function(result){
+			$.getJSON("https://raw.githubusercontent.com/laksa19/mikhmonv3/master/verson.txt?t=" + (Math.floor((Math.random() * 999999999) + 1))*128, function(result){
 				$("#version").html(result.version)
 				$("#updated").html(result.updated)
     
