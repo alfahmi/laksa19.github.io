@@ -12,7 +12,6 @@
 	<link rel="stylesheet" href="css/mikhmon-ui-light.css">
 	<link rel="icon" href="img/favicon.png" />
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script src="https://raw.githubusercontent.com/laksa19/mikhmonv3/master/verson.js"></script>
 </head>
 
 <body style="background: url('./img/textures.png');">
@@ -83,7 +82,7 @@
 								</div>
 								<div class="card-body">
 									<img class="img1" src="img/mikhmon.png">
-									<div class="mr-t-10" id="version"></div>
+									<div class="mr-t-10" > <span id="version"></span> <span id="updated"></span></div>
 
 								</div>
 
@@ -116,9 +115,11 @@
 	</div>
 	<script>
 		$(function () {
-			//$("#version").load("https://github.com/laksa19/mikhmonv3 .commit-tease");
-			$("#version").load("https://raw.githubusercontent.com/laksa19/mikhmonv3/master/verson.txt");
-			//$("#menu").load("./menu.html");
+			$.getJSON("https://raw.githubusercontent.com/laksa19/mikhmonv3/master/verson.txt", function(result){
+				$("#version").html(result.version)
+				$("#version").html(result.updated)
+    
+    			});
 		});
 	</script>
 </body>
