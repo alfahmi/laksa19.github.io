@@ -34,7 +34,7 @@
 											<h3><i class="fa fa-download"></i> Download Mikhmon</h3>
 										</div>
 										<div class="card-body">
-											<div class="mr-t-10 be-b-10"><span id="version"></span> <a  href="https://laksa19.github.io/mikhmonv3" target="_blank"><i class="fa fa-info-circle"></i> Changelog</a></div>
+											<div class="mr-t-10 be-b-10"><span id="version"></span> <span id="updated"></span> <a  href="https://laksa19.github.io/mikhmonv3" target="_blank"><i class="fa fa-info-circle"></i> Changelog</a></div>
 											<p class="mr-b-10">
 												Portable Windows :<br>
 												<a class="btn bg-blue pd-10" href="https://laksa19.github.io/getdownloadlink.html?mikhmon_portable"><i
@@ -128,7 +128,11 @@
 
 	<script>
 		$(function () {
-			$("#version").load("https://raw.githubusercontent.com/laksa19/mikhmonv3/master/verson.txt");
+			$.getJSON("https://raw.githubusercontent.com/laksa19/mikhmonv3/master/verson.txt", function(result){
+				$("#version").html(result.version)
+				$("#updated").html(result.updated)
+    
+    			});
 		});
 	</script>
 </body>
