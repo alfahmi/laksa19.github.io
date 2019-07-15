@@ -52,7 +52,7 @@ var page = [
 ];
 
 var indexPage = page.indexOf(uri);
-console.log(uri);
+
 if (uri === "download" || uri === "template" || uri === "voucher" || uri === "getdownloadlink") {
     $(function () {
         $("#download").addClass("active");
