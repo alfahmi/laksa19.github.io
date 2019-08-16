@@ -11,7 +11,8 @@ cat >update-mikhmon <<EOL
 mkdir ~/backup-mikhmon
 cp ~/mikhmonv3/include/config.php ~/backup-mikhmon/config.php
 cp -rf ~/mikhmonv3/voucher/. ~/backup-mikhmon/voucher/
-rm -rf ~/backup-mikhmon/voucher/print.php
+rm -f ~/backup-mikhmon/voucher/print.php
+rm -f ~/backup-mikhmon/voucher/printbt.php
 cp -rf ~/mikhmonv3/img/. ~/backup-mikhmon/img/
 rm -rf mikhmonv3
 git clone https://github.com/laksa19/mikhmonv3.git
