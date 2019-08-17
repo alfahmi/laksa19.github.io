@@ -18,18 +18,18 @@ $timelimit = "Durasi:".substr($timelimit,0,-1)."Hari";
 $timelimit = "Durasi:".substr($timelimit,0,-1)."Jam";
 }else if(substr($timelimit,-1) == "w"){
 $timelimit = "Durasi:".(substr($timelimit,0,-1)*7)."Hari";}
-if($getprice == "3000"){ $color = "#01579B";} 
-elseif($getprice == "1000"){ $color = "#FF1493";}
-elseif($getprice == "2000"){ $color = "#8B008B";}
-elseif($getprice == "3000"){ $color = "#01579B";}
-elseif($getprice == "5000"){ $color = "#800000";}
-elseif($getprice == "10000"){ $color = "#E65100";}
-elseif($getprice == "15000"){ $color = "#228B22";}
-elseif($getprice == "20000"){ $color = "#008000";}
-elseif($getprice == "30000"){ $color = "#FF00FF";}
-elseif($getprice == "60000"){ $color = "#E60C00";}
-elseif($getprice == "75000"){ $color = "#FF0000";}  
-elseif($getprice == "70000"){ $color = "#CF0000";} 
+if($getsprice == "3000"){ $color = "#01579B";} 
+elseif($getsprice == "1000"){ $color = "#FF1493";}
+elseif($getsprice == "2000"){ $color = "#8B008B";}
+elseif($getsprice == "3000"){ $color = "#01579B";}
+elseif($getsprice == "5000"){ $color = "#800000";}
+elseif($getsprice == "10000"){ $color = "#E65100";}
+elseif($getsprice == "15000"){ $color = "#228B22";}
+elseif($getsprice == "20000"){ $color = "#008000";}
+elseif($getsprice == "30000"){ $color = "#FF00FF";}
+elseif($getsprice == "60000"){ $color = "#E60C00";}
+elseif($getsprice == "75000"){ $color = "#FF0000";}  
+elseif($getsprice == "70000"){ $color = "#CF0000";} 
 else{ $color = "#BA68C8";}?>
 <style type="text/css">.rotate {
 vertical-align: center;
