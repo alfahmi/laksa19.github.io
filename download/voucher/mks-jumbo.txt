@@ -18,17 +18,17 @@ if(substr($timelimit,-1) == "d" & strlen($timelimit) >3){
 }else if(substr($timelimit,-1) == "w"){
   $timelimit = "Durasi:".(substr($timelimit,0,-1)*7)." HARI";
 }
-if($getprice == "3000"){ $color = "#800000";} 
-elseif($getprice == "1000"){ $color = "#424242";}
-elseif($getprice == "2000"){ $color = "#424242";}
-elseif($getprice == "3000"){ $color = "#800000";}
-elseif($getprice == "5000"){ $color = "#FF4500";}
-elseif($getprice == "10000"){ $color = "#424242";}
-elseif($getprice == "15000"){ $color = "#228B22";}
-elseif($getprice == "20000"){ $color = "#008000";}
-elseif($getprice == "30000"){ $color = "#FF00FF";}
-elseif($getprice == "60000"){ $color = "#E60C00";} 
-elseif($getprice == "70000"){ $color = "#FF0000";} 
+if($getsprice == "3000"){ $color = "#800000";} 
+elseif($getsprice == "1000"){ $color = "#424242";}
+elseif($getsprice == "2000"){ $color = "#424242";}
+elseif($getsprice == "3000"){ $color = "#800000";}
+elseif($getsprice == "5000"){ $color = "#FF4500";}
+elseif($getsprice == "10000"){ $color = "#424242";}
+elseif($getsprice == "15000"){ $color = "#228B22";}
+elseif($getsprice == "20000"){ $color = "#008000";}
+elseif($getsprice == "30000"){ $color = "#FF00FF";}
+elseif($getsprice == "60000"){ $color = "#E60C00";} 
+elseif($getsprice == "70000"){ $color = "#FF0000";} 
 else{ $color = "#BA68C8";}
 ?>  
  <!--mks-mulai-->
@@ -58,7 +58,7 @@ else{ $color = "#BA68C8";}
 </div>
 <!--mks-price-->	
 <div style="text-align:right;font-weight:bold;font-family:Tahoma;font-size:25px;padding-left:17px;color:<?php echo $color ?>">
-<small style="font-size:10px;margin-left:-17px;position:absolute;">Rp.</small><?php echo $getprice;?>
+<small style="font-size:10px;margin-left:-17px;position:absolute;"></small><?php echo $price;?>
 </div>	
 <!--mks-price-akhir-->	
 </td>		
