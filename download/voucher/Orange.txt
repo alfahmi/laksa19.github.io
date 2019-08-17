@@ -14,7 +14,7 @@
 <!-- NUM -->
 
 <!-- PRICE -->
-<div style="position:absolute;margin-top:5px;background:#FF6D00;width:auto;color:#fff;font-weight:bold;font-family:Agency FB;font-size:24px;padding:2.5px 25px 2.5px 20px;border-radius:0 0 50px 0;"><small style="font-size:14px;margin-left:-15px;position:absolute;">Rp.</small><?php echo $getprice;?></div>
+<div style="position:absolute;margin-top:5px;background:#FF6D00;width:auto;color:#fff;font-weight:bold;font-family:Agency FB;font-size:24px;padding:2.5px 25px 2.5px 20px;border-radius:0 0 50px 0;"><small style="font-size:14px;margin-left:-15px;position:absolute;"></small><?php echo $price;?></div>
 <!-- PRICE -->
 <!-- AKUN -->
 <div style="position:absolute;top:40px;right:0px;display:inline;color:#fff;text-align:right;">
