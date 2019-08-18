@@ -58,7 +58,7 @@ else{ $color = "#BA68C8";}
 </div>
 <!--mks-price-->	
 <div style="text-align:right;font-weight:bold;font-family:Tahoma;font-size:25px;padding-left:17px;color:<?php echo $color ?>">
-<small style="font-size:10px;margin-left:-17px;position:absolute;"></small><?php echo $price;?>
+<small style="font-size:10px;margin-left:-17px;position:absolute;">Rp </small><?php echo $getsprice;?>
 </div>	
 <!--mks-price-akhir-->	
 </td>		
