@@ -30,12 +30,12 @@ background-color:<?= $color;?>; -webkit-print-color-adjust: exact;
 ditambahkan ke style di tag html yang ingin dikasi warna.
  */
 
-if ($getprice == "1000") {
+if ($getsprice == "1000") {
   $color = "#2196F3";
 } // jika harga == "1000" maka warna = "#2196F3"
-elseif ($getprice == "3000") {
+elseif ($getsprice == "3000") {
   $color = "#009688";
-} elseif ($getprice == "5000") {
+} elseif ($getsprice == "5000") {
   $color = "#FF9800";
 } // ini yang dicopy untuk menambah warna berdarsarkan harga, kemudian paste di atas baris // else color
 
