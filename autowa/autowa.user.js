@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Auto Send WhatsApp Web
 // @namespace    https://laksa19.github.io/autowa
-// @updateURL    https://raw.githubusercontent.com/laksa19/autowa/master/autowa.user.js
-// @downloadURL  https://raw.githubusercontent.com/laksa19/autowa/master/autowa.user.js
-// @iconURL      https://raw.githubusercontent.com/laksa19/autowa/master/favicon.png
-// @version      0.0.25
+// @updateURL    https://raw.githubusercontent.com/laksa19/laksa19.github.io/autowa/master/autowa.user.js
+// @downloadURL  https://raw.githubusercontent.com/laksa19/laksa19.github.io/autowa/master/autowa.user.js
+// @iconURL      https://raw.githubusercontent.com/laksa19/laksa19.github.io/master/autowa/favicon.png
+// @version      0.0.27
 // @author       Laksamadi Guko
 // @description  Tool Auto Send for WhatsApp Web
 // @match        https://web.whatsapp.com/*
