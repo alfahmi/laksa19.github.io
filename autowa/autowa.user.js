@@ -3,7 +3,7 @@
 // @namespace    https://laksa19.github.io/autowa
 // @updateURL    https://raw.githubusercontent.com/laksa19/autowa/master/autowa.user.js
 // @downloadURL  https://raw.githubusercontent.com/laksa19/autowa/master/autowa.user.js
-// @iconURL      https://raw.githubusercontent.com/laksa19/GEB/master/favicon.png
+// @iconURL      https://raw.githubusercontent.com/laksa19/autowa/master/favicon.png
 // @version      0.0.25
 // @author       Laksamadi Guko
 // @description  Tool Auto Send for WhatsApp Web
