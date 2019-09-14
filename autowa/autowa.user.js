@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Auto Send WhatsApp Web
 // @namespace    https://laksa19.github.io/autowa
-// @updateURL    https://raw.githubusercontent.com/laksa19/laksa19.github.io/autowa/master/autowa.user.js
-// @downloadURL  https://raw.githubusercontent.com/laksa19/laksa19.github.io/autowa/master/autowa.user.js
+// @updateURL    https://github.com/laksa19/laksa19.github.io/raw/master/autowa/autowa.user.js
+// @downloadURL  https://github.com/laksa19/laksa19.github.io/raw/master/autowa/autowa.user.js
 // @iconURL      https://raw.githubusercontent.com/laksa19/laksa19.github.io/master/autowa/favicon.png
 // @version      0.1.29
 // @author       Laksamadi Guko
