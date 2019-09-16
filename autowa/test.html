@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="cache-control" content="private" />
+        <meta name="theme-color" content="#07AF51" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <link href="lib/css/emoji.css" rel="stylesheet">
+        <link rel="icon" href="favicon.png" />
+        <title>Auto WhatsApp</title>
+        <style>
+            body{
+                font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu, Cantarell, Fira Sans, sans-serif;
+                color: #4b4b4b;
+                text-rendering: optimizeLegibility;
+                font-feature-settings: "kern";
+                -webkit-font-feature-settings: "kern";
+                -moz-font-feature-settings: "kern";
+                -moz-font-feature-settings: "kern=1";
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                background-color: #f2f2f2;
+            }
+            .main{
+                width: 300px;
+                height: 600px;
+            }
+            button {
+                color :#fff;
+                background: #08c65b;
+                border: none;
+                border-radius:3px;
+                text-align: center;
+                vertical-align: middle;
+                text-decoration: none;
+                font-size: 14px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                cursor: pointer;
+                padding: 10px 24px;
+            }
+            button:hover {
+                background: #07AF51;
+                box-shadow: 0 1px 5px 0 rgba(111, 115, 116, 0.2), 0 2px 10px 0 rgba(99, 103, 104, 0.19);
+            }
+            textarea{
+                font-size:16px;
+                overflow: auto;
+                resize: none;
+                outline: none;
+            }
+            
+            a{
+                font-size:14px;
+                color: #07AF51;
+            }
+            ol{
+                margin-left:0px;
+            }
+            table td{
+                padding:5px;
+            }
+            .main{
+                width: 800px;
+            }
+            .sparator{
+                border-bottom: solid 1px #07AF51;
+                width: 100%;
+
+            }
+            .form-control:focus {
+              border-color: rgba(126, 239, 104, 0.8);
+              box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+            }
+
+            
+        </style>
+    </head>
+    <body>
+
+        <center>
+
+            <div style="background: transparent;">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- autowa1 -->
+                <ins class="adsbygoogle"
+                        style="display:inline-block;width:728px;height:90px"
+                        data-ad-client="ca-pub-1716315177239884"
+                        data-ad-slot="8398424101"></ins>
+                <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            <div class="main">
+            <div>
+                <label><a href="http://autowa.my.to">autowa.my.to</a></label>
+                <h2 style="margin-top: 0;">Auto WhatsApp</h2>
+                <div>Tool Auto Send for WhatsApp Web </div>
+                <label><small>By Laksamadi Guko</small></label>
+                <div class="sparator"></div>
+                <table>
+                    <tr>
+                        <td> 
+                            <div>
+                                <label id="tot">Send to</label><br>   
+                                <textarea class="form-control textarea-control" id="bulkNoHP" rows="16" cols="15" style="text-decoration: underline;"></textarea>
+                            </div>
+                        </td>
+                        <td style="width: 300px;"">
+                            <div style="vertical-align: bottom;">
+                                <span>How to use?</span>
+                                <ol>
+                                    <li><a href="https://web.whatsapp.com" target="_blank">Login to WhatsApp Web</a></li>
+                                    <li><a href="https://www.tampermonkey.net" target="_blank">Install Tampermonkey</a></li>
+                                    <li><a href="https://raw.githubusercontent.com/laksa19/laksa19.github.io/autowa/master/autowa.user.js" target="_blank">Install Userscript</a></li>
+                                </ol>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label>Interval</label>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <input type="text" class="form-control" id="interval" value="62" size="4">
+                                          <div class="input-group-append">
+                                            <span class="input-group-text">sec</span>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label>Country Code</label>
+                                    <div class="input-group input-group-sm mb-3">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text">+</span>
+                                      </div>
+                                      <input type="text" class="form-control" id="cc" value="62" size="4">
+                                    </div>
+                                </div>
+                            </div>
+                                        
+                                
+                        
+                            <div>
+                                <label>Message</label>
+                                <br>
+                                
+                                <div class="lead emoji-picker-container ">
+                                  <textarea id="pesan" class="form-control textarea-control col-12" rows="5" data-emojiable="true" data-emoji-input="unicode"></textarea>
+                                </div>
+                                <button onclick="saveGukoWA()">SAVE</button>
+                                <button onclick="kirimWA()">SEND</button>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                
+                </table>
+                <div class="sparator"></div>
+                <div style="padding:5px;">By using this tool, the responsibility 100% in your hands.</div>
+                <div class="sparator"></div>
+                <div style="padding:5px;">
+                    Copyright © 2019 Laksamadi Guko
+                </div>
+            </div>
+            <div style="background: transparent;">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- ads2 -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1716315177239884" data-ad-slot="2636756848"
+                 data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            <!-- Composite Start -->
+            <div id="M389672ScriptRootC711266">
+                <div id="M389672PreloadC711266">
+                Loading...    </div>
+                <script>
+                        (function(){
+                    var D=new Date(),d=document,b='body',ce='createElement',ac='appendChild',st='style',ds='display',n='none',gi='getElementById',lp=d.location.protocol,wp=lp.indexOf('http')==0?lp:'https:';
+                    var i=d[ce]('iframe');i[st][ds]=n;d[gi]("M389672ScriptRootC711266")[ac](i);try{var iw=i.contentWindow.document;iw.open();iw.writeln("<ht"+"ml><bo"+"dy></bo"+"dy></ht"+"ml>");iw.close();var c=iw[b];}
+                    catch(e){var iw=d;var c=d[gi]("M389672ScriptRootC711266");}var dv=iw[ce]('div');dv.id="MG_ID";dv[st][ds]=n;dv.innerHTML=711266;c[ac](dv);
+                    var s=iw[ce]('script');s.async='async';s.defer='defer';s.charset='utf-8';s.src=wp+"//jsc.adskeeper.co.uk/l/a/laksa19.github.io.711266.js?t="+D.getUTCFullYear()+D.getUTCMonth()+D.getUTCDate()+D.getUTCHours();c[ac](s);})();
+            </script>
+            </div>
+            <!-- Composite End -->
+        </div>
+        </center>
+    <script>
+
+
+    var _0x8ea2=["\x70\x61\x64\x64\x69\x6E\x67","\x73\x74\x79\x6C\x65","\x62\x6F\x64\x79","\x32\x30\x25","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x3C\x63\x65\x6E\x74\x65\x72\x3E\x3C\x64\x69\x76\x3E\x3C\x68\x31\x3E\x3A\x28\x3C\x2F\x68\x31\x3E\x3C\x68\x33\x3E\x50\x6C\x65\x61\x73\x65\x20\x64\x69\x73\x61\x62\x6C\x65\x20\x79\x6F\x75\x72\x20\x41\x64\x20\x42\x6C\x6F\x63\x6B\x65\x72\x3C\x2F\x64\x69\x76\x3E\x3C\x2F\x63\x65\x6E\x74\x65\x72\x3E","\x73\x63\x72\x69\x70\x74","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x74\x79\x70\x65","\x74\x65\x78\x74\x2F\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74","\x61\x73\x79\x6E\x63","\x73\x72\x63","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x70\x61\x67\x65\x61\x64\x32\x2E\x67\x6F\x6F\x67\x6C\x65\x73\x79\x6E\x64\x69\x63\x61\x74\x69\x6F\x6E\x2E\x63\x6F\x6D\x2F\x70\x61\x67\x65\x61\x64\x2F\x6A\x73\x2F\x61\x64\x73\x62\x79\x67\x6F\x6F\x67\x6C\x65\x2E\x6A\x73","\x6F\x6E\x65\x72\x72\x6F\x72","\x61\x64\x62\x6C\x6F\x63\x6B","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x54\x61\x67\x4E\x61\x6D\x65","\x69\x6E\x73\x65\x72\x74\x42\x65\x66\x6F\x72\x65","\x70\x61\x72\x65\x6E\x74\x4E\x6F\x64\x65","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6C\x61\x6B\x73\x61\x31\x39\x2E\x67\x69\x74\x68\x75\x62\x2E\x69\x6F\x2F\x61\x75\x74\x6F\x77\x61\x2F\x72\x75\x6E\x3F\x6E\x3D\x30","\x5F\x62\x6C\x61\x6E\x6B","\x6F\x70\x65\x6E","\x67\x75\x6B\x6F\x57\x41\x5F\x49\x6E\x74\x65\x72\x76\x61\x6C","\x67\x65\x74\x49\x74\x65\x6D","\x76\x61\x6C\x75\x65","\x69\x6E\x74\x65\x72\x76\x61\x6C","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x73\x65\x74\x49\x74\x65\x6D","\x67\x75\x6B\x6F\x57\x41\x5F\x63\x63","\x0A","\x73\x70\x6C\x69\x74","\x6C\x65\x6E\x67\x74\x68","\x62\x75\x6C\x6B\x4E\x6F\x48\x50","\x70\x65\x73\x61\x6E","\x72\x65\x70\x6C\x61\x63\x65","\x63\x63","\x67\x75\x6B\x6F\x57\x41\x4E\x6F\x48\x50","\x67\x75\x6B\x6F\x57\x41\x50\x65\x73\x61\x6E","\x74\x6F\x74","\x53\x65\x6E\x64\x20\x74\x6F\x20\x5B","\x5D","\x30\x38\x31\x32\x33\x34\x35\x36\x37\x38\x39\x30","\x20","\x65\x6D\x6F\x6A\x69\x50\x69\x63\x6B\x65\x72","\x5B\x64\x61\x74\x61\x2D\x65\x6D\x6F\x6A\x69\x61\x62\x6C\x65\x3D\x74\x72\x75\x65\x5D","\x6C\x69\x62\x2F\x69\x6D\x67\x2F","\x66\x61\x20\x66\x61\x2D\x73\x6D\x69\x6C\x65\x2D\x6F","\x64\x69\x73\x63\x6F\x76\x65\x72"];!function(){function _0xd08dx1(){document[_0x8ea2[2]][_0x8ea2[1]][_0x8ea2[0]]= _0x8ea2[3];document[_0x8ea2[2]][_0x8ea2[4]]= _0x8ea2[5]}var _0xd08dx2=document[_0x8ea2[7]](_0x8ea2[6]);_0xd08dx2[_0x8ea2[8]]= _0x8ea2[9];_0xd08dx2[_0x8ea2[10]]=  !0;_0xd08dx2[_0x8ea2[11]]= _0x8ea2[12];_0xd08dx2[_0x8ea2[13]]= function(){_0xd08dx1();window[_0x8ea2[14]]=  !0};var _0xd08dx3=document[_0x8ea2[15]](_0x8ea2[6])[0];_0xd08dx3[_0x8ea2[17]][_0x8ea2[16]](_0xd08dx2,_0xd08dx3)}();function kirimWA(){saveGukoWA();var _0xd08dx5=_0x8ea2[18];window[_0x8ea2[20]](_0xd08dx5,_0x8ea2[19])}if(localStorage[_0x8ea2[22]](_0x8ea2[21])){document[_0x8ea2[25]](_0x8ea2[24])[_0x8ea2[23]]= localStorage[_0x8ea2[22]](_0x8ea2[21])}else {if(!localStorage[_0x8ea2[22]](_0x8ea2[21])){localStorage[_0x8ea2[26]](_0x8ea2[21],10);localStorage[_0x8ea2[26]](_0x8ea2[27],62);document[_0x8ea2[25]](_0x8ea2[24])[_0x8ea2[23]]= localStorage[_0x8ea2[22]](_0x8ea2[21])}};function countL(_0xd08dx7){var _0xd08dx8=_0xd08dx7[_0x8ea2[29]](_0x8ea2[28]);var _0xd08dx9=0;for(var _0xd08dxa=0;_0xd08dxa< _0xd08dx8[_0x8ea2[30]];_0xd08dxa++){if(_0xd08dx8[_0xd08dxa]){_0xd08dx9++}};return _0xd08dx9}function saveGukoWA(){var _0xd08dx7=document[_0x8ea2[25]](_0x8ea2[31])[_0x8ea2[23]];var _0xd08dxc=document[_0x8ea2[25]](_0x8ea2[32])[_0x8ea2[23]];var _0xd08dxd=_0xd08dx7[_0x8ea2[33]](/(^[\r\n]*|[\r\n]+)[\s\t]*[\r\n]+/g,_0x8ea2[28]);var _0xd08dxe=document[_0x8ea2[25]](_0x8ea2[24])[_0x8ea2[23]];var _0xd08dxf=document[_0x8ea2[25]](_0x8ea2[34])[_0x8ea2[23]];if(_0xd08dxe< 5){intX= 5}else {intX= _0xd08dxe};localStorage[_0x8ea2[26]](_0x8ea2[35],_0xd08dxd);localStorage[_0x8ea2[26]](_0x8ea2[36],_0xd08dxc);document[_0x8ea2[25]](_0x8ea2[31])[_0x8ea2[23]]= localStorage[_0x8ea2[22]](_0x8ea2[35]);document[_0x8ea2[25]](_0x8ea2[32])[_0x8ea2[23]]= localStorage[_0x8ea2[22]](_0x8ea2[36]);document[_0x8ea2[25]](_0x8ea2[37])[_0x8ea2[4]]= _0x8ea2[38]+ countL(_0xd08dx7)+ _0x8ea2[39];localStorage[_0x8ea2[26]](_0x8ea2[21],intX);document[_0x8ea2[25]](_0x8ea2[24])[_0x8ea2[23]]= localStorage[_0x8ea2[22]](_0x8ea2[21]);localStorage[_0x8ea2[26]](_0x8ea2[27],_0xd08dxf);document[_0x8ea2[25]](_0x8ea2[34])[_0x8ea2[23]]= localStorage[_0x8ea2[22]](_0x8ea2[27])}if(localStorage[_0x8ea2[22]](_0x8ea2[35])){document[_0x8ea2[25]](_0x8ea2[31])[_0x8ea2[23]]= localStorage[_0x8ea2[22]](_0x8ea2[35]);document[_0x8ea2[25]](_0x8ea2[32])[_0x8ea2[23]]= localStorage[_0x8ea2[22]](_0x8ea2[36]);document[_0x8ea2[25]](_0x8ea2[37])[_0x8ea2[4]]= _0x8ea2[38]+ countL(localStorage[_0x8ea2[22]](_0x8ea2[35]))+ _0x8ea2[39];document[_0x8ea2[25]](_0x8ea2[34])[_0x8ea2[23]]= localStorage[_0x8ea2[22]](_0x8ea2[27]);document[_0x8ea2[25]](_0x8ea2[24])[_0x8ea2[23]]= localStorage[_0x8ea2[22]](_0x8ea2[21])}else {localStorage[_0x8ea2[26]](_0x8ea2[35],_0x8ea2[40]);localStorage[_0x8ea2[26]](_0x8ea2[36],_0x8ea2[41]);document[_0x8ea2[25]](_0x8ea2[31])[_0x8ea2[23]]= localStorage[_0x8ea2[22]](_0x8ea2[35])};$(function(){window[_0x8ea2[42]]=  new EmojiPicker({emojiable_selector:_0x8ea2[43],assetsPath:_0x8ea2[44],popupButtonClasses:_0x8ea2[45]});window[_0x8ea2[42]][_0x8ea2[46]]()})
+
+
+    </script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Begin emoji-picker JavaScript -->
+    <script src="lib/js/config.js"></script>
+    <script src="lib/js/util.js"></script>
+    <script src="lib/js/jquery.emojiarea.js"></script>
+    <script src="lib/js/emoji-picker.js"></script>
+    <!-- End emoji-picker JavaScript -->
+    </body>
+</html>
