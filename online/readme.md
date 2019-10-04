@@ -26,7 +26,7 @@
 3. Data yang diproses terlalu banyak. Mikhmon ditulis dalam program PHP yang mana menggunakan settingan default 30 detik untuk megeksekusi sebuah perintah. Apabila melewati batas tersebut makan prosesnya akan dihentikan. Lantas data apa yang dimaksud terlalubanyak diproses? Data yang dimaksud adalah data penjualan baik yang tampil di Dashboard maupun menu Report. Data penjualan yang terlalu banyak ini juga menandakan bahwa usaha Anda sudah Jooss Guandoss.
 
 ### Penanganan 2
-1. Jika koneksi L2TP gukotunnel tidak terkoneksi, Anda dapat berpindah koneksi ke OVPN. Kalau sudah terkoneksi yang OVPN yang L2TP harus di disable, pakai salah satu saja. Panduan untuk koneksi OVPN klik [di sini](https://raw.githubusercontent.com/laksa19/laksa19.github.io/master/img/online4.png)
+1. Jika koneksi L2TP gukotunnel tidak terkoneksi, Anda dapat berpindah koneksi ke OVPN. Kalau sudah terkoneksi yang OVPN yang L2TP harus di disable, pakai salah satu saja. Panduan untuk koneksi OVPN klik [di sini](https://drive.google.com/file/d/10QxPYIgJM31xxw0auTuy0SobCG-dBYo8/view?usp=sharing)
 
 2. Maksimalkan Settingan Mikrotik Anda. Hubungi jasa setting Mikrotik yang Handal.
 
