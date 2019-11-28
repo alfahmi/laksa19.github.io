@@ -27,7 +27,7 @@ Scale: 100 (semakin kecil semakin banyak)
 <?php echo " [$num]";?>
 </div>
 <div style="float:right;width:50%;text-align:right;font-weight:bold;font-family:Agency FB;color:#555;font-size:32px;">
-<small style="font-size:14px;margin-left:-15px;position:absolute;">Rp </small><?php echo $getsprice;?>
+<small style="font-size:10px;margin-left:-17px;position:absolute;"><?= explode(" ",$price)[0]?></small><?= explode(" ",$price)[1]?>
 </div>
 </div>
 <div style="height:75px;">
