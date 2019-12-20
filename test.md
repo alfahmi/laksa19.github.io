@@ -1,25 +1,10 @@
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/prismjs@1.6.0/themes/prism-tomorrow.css"/>
-<style>
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: hsl(0, 0%, 90%);
-}
-pre {
-  color: hsl(0, 0%, 90%);
-  background: hsl(0, 0%, 10%);
-  padding: 10px;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  margin-bottom: 0;
-}
-.render-js {
-  background: white;
-  border: 2px solid hsl(0, 0%, 10%);
-  padding: 10px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-}
-</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-1716315177239884",
+          enable_page_level_ads: true
+     });
+</script>
 
 # Actually render your code blocks
 
@@ -58,6 +43,4 @@ Isn't that
 
 Yes.
 
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-<script src="https://unpkg.com/react@15.6.1/dist/react.min.js"></script>
-<script src="https://unpkg.com/react-dom@15.6.1/dist/react-dom.min.js"></script>
+
