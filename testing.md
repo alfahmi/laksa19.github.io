@@ -12,6 +12,8 @@
 </script>
 </div>
 ### configs
+
+```
 setting IP, username & password Mikrotik 
 
 => config => connection.php
@@ -20,7 +22,7 @@ setting IP, username & password Mikrotik
 setting interface traffic monitor 
 
 => index.php variable $iface = "interface-name"
-
+```
 ### link
 
 
