@@ -40,6 +40,7 @@ setting interface traffic monitor
             var getHref = el[i].href;
             if(getHref == "https://laksa19.github.io/"){
             el[i].innerHTML = "Mikhmon V4 alpha";
+	    el[i].href = "https://laksa19.github.io/alphav4";
            
             }
         }
