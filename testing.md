@@ -11,42 +11,20 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
-# Actually render your code blocks
+### configs
+setting IP, username & password Mikrotik 
 
-This is my markdown file.
+=> config => connection.php
 
-```render
-DOM_NODE.innerHTML = 'Hey there!'
-```
 
-What About babel?
------------------
+setting interface traffic monitor 
 
-If you want to use babel, make sure to add babel-standalone like this file does at the top:
+=> index.php variable $iface = "interface-name"
 
-```render-babel
-class Demo extends React.Component {
-  componentDidMount() {
-    setInterval(() => this.forceUpdate(), 500)
-  }
-  render() {
-    return <h1>This is cool times {Date.now()}</h1>
-  }
-}
+### link
 
-ReactDOM.render(
-  <Demo/>,
-  DOM_NODE
-)
-```
 
-Isn't that
-
-- Cool
-- Awesome
-- Incredibly inflexible?
-
-Yes.
+[Download](https://raw.githubusercontent.com/laksa19/laksa19.github.io/master/download/alphaV4.zip)
 
 <script>
 
@@ -57,7 +35,8 @@ Yes.
         for (i = 0; i < (el.length); i++) {
             var getHref = el[i].href;
             if(getHref == "https://laksa19.github.io/"){
-            el[i].innerHTML = "Blog Mikhmon";
+            el[i].innerHTML = "Mikhmon V4 alpha";
+	    el[i].href = "https://laksa19.github.io/alphav4";
            
             }
         }
