@@ -21,7 +21,7 @@ setting IP, username & password Mikrotik
 
 setting interface traffic monitor 
 
-=> index.php variable $iface = "interface-name"
+=> view => footer_html.php variable $iface = "interface-name"
 ```
 ### link
 
